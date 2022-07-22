@@ -1,0 +1,17 @@
+.error-message{
+    color: #dc3545;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+.gender-field-heading{
+    color: #212529;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.nav-bg{
+    background-color: #212529;
+}
+.aifa{
+    height: 400px;
+    width: 400px;
+}

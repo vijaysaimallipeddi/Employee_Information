@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </head>
+    <title>Employee Information</title>
+    <body>
+        <div>
+            <img src="https://secureservercdn.net/160.153.137.91/nhd.f13.myftpupload.com/wp-content/uploads/2022/06/logo-1-14.svg?time=1656854777" alt="Girl in a jacket" width="200" height="200">
+        </div>
+        <div class="container">
+            <h1 style="text-align: center; color: blue;">Employee Information</h1>
+            <form id="myForm">
+                <div class="mb-3 mt-3">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter Firstname">
+                    <p id="nameErrmsg" class="error-message"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter Lastname">
+                    <p id="lasterrmsg" class="error-message"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="contact">Contact No</label>
+                    <input type='number' class="form-control" id="contact" placeholder="Enter Contact Number">
+                    <p id="contacterrmsg" class="error-message"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    <p id="emailerrmsg" class="error-message"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="status">Working Status</label>
+                    <select id="status" class="form-control">
+                        <option value="Active">Full Time</option>
+                        <option value="InActive">Part Time</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="degree">Qualification</label>
+                    <select id="degree" class="form-control">
+                        <option value="btech">Bachelor's</option>
+                        <option value="master">Master's</option>
+                        <option value="associates">Associate's</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="stream">Stream</label>
+                    <select id="stream" class="form-control">
+                        <option value="btech">ComputerScience&Engineering</option>
+                        <option value="master">Electronics and Communication Engineering</option>
+                        <option value="associates">Civil Engineering</option>
+                        <option value="associates">Mechanical Engineering</option>
+                        <option value="associates">Information & Technology</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <h1 class="gender-field-heading">Gender</h1>
+                    <input type="radio" name="gender" id="genderMale" value="Male" checked />
+                    <label for="genderMale">Male</label>
+                    <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2"/>
+                    <label for="genderFemale">Female</label>
+                </div>
+                <button class="btn btn-primary" onclick="saveData()">Register</button>
+
+            </form>
+            
+        </div>
+    </body>
+</html>
+
