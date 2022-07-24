@@ -73,7 +73,7 @@ genderMaleEl.addEventListener("change",function(event){
 genderFemaleEl.addEventListener("change",function(event){
     formData.genderFemale=event.target.value
 })
-dkdh
+
 
 function validateFormData(formData){
     let {firstname,lastname,email,contact}=formData
@@ -91,9 +91,12 @@ function validateFormData(formData){
     }
 }
 
-// function submitFormData(formData){
-
-// }
+function submitFormData(formData){
+    console.log(formData)
+    var x = JSON.stringify(formData)
+    localStorage.setItem("Data",x)
+    
+}
 
 
 myFormEl.addEventListener("submit",function(event){
@@ -103,87 +106,3 @@ myFormEl.addEventListener("submit",function(event){
 })
 
 
-
-// // myFormEl.addEventListener("submit",function(event){
-// //     event.preventDefault()
-    
-// // })
-
-// function test(){
-//     let firstnameEl = document.getElementById("firstname").value
-//     let lastnameEl = document.getElementById("lastname").value
-//     let contactEl = document.getElementById("contact").value
-//     let emailEl = document.getElementById("email").value
-//     let statusEl = document.getElementById("status").value
-//     let degreeEl = document.getElementById("degree").value
-//     let streamEl = document.getElementById("stream").value
-//     let genderMaleEl = document.getElementById("genderMale").value
-//     let genderFemaleEl = document.getElementById("genderFemale").value
-
-//     localStorage.setItem("firstname",firstnameEl)
-//     localStorage.setItem("lastname",lastnameEl)
-//     localStorage.setItem("contact",contactEl)
-//     localStorage.setItem("email",emailEl)
-//     localStorage.setItem("status",statusEl)
-//     localStorage.setItem("degree",degreeEl)
-//     localStorage.setItem("stream",streamEl)
-//     localStorage.setItem("genderMale",genderMaleEl)
-//     localStorage.setItem("genderFemale",genderFemaleEl)
-
-    
-// }
-
-// // let registerBtnEl = document.getElementById("registerBtn")
-
-// // registerBtnEl.addEventListener('click',(event)=>{
-// //     let firstnameEl = document.getElementById("firstname")
-// //     let lastnameEl = document.getElementById("lastname")
-// //     let contactEl = document.getElementById("contact")
-// //     let emailEl = document.getElementById("email")
-// //     let statusEl = document.getElementById("status")
-// //     let degreeEl = document.getElementById("degree")
-// //     let streamEl = document.getElementById("stream")
-// //     let genderMaleEl = document.getElementById("genderMale")
-// //     let genderFemaleEl = document.getElementById("genderFemale")
-
-// //     firstnameEl=firstnameEl.value;
-// //     localStorage.setItem("firstname",firstnameEl)
-
-// //     lastnameEl=lastnameEl.value;
-// //     localStorage.setItem("lastname",lastnameEl)
-
-// //     contactEl=contactEl.value
-// //     localStorage.setItem("contact",contactEl)
-    
-
-
-
-// // })
-
-
-
-function saveData(){
-    let firstnameEl,lastnameEl,contactEl,emailEl,statusEl,degreeEl,streamEl,genderMaleEl,genderFemaleEl
-
-    firstnameEl = document.getElementById("firstname").value;
-    lastnameEl = document.getElementById("lastname").value;
-    contactEl = document.getElementById("contact").value;
-    emailEl = document.getElementById("email").value;
-    statusEl = document.getElementById("status").value;
-    degreeEl = document.getElementById("degree").value;
-    streamEl = document.getElementById("stream").value;
-    genderMaleEl = document.getElementById("genderMale").value;
-    genderFemaleEl = document.getElementById("genderFemale").value;
-
-
-    localStorage.setItem("firstname",firstnameEl)
-    localStorage.setItem("lastname",lastnameEl)
-    localStorage.setItem("contact",contactEl)
-    localStorage.setItem("email",emailEl)
-    localStorage.setItem("status",statusEl)
-    localStorage.setItem("degree",degreeEl)
-    localStorage.setItem("stream",streamEl)
-    localStorage.setItem("genderMale",genderMaleEl)
-    localStorage.setItem("genderFemale",genderFemaleEl)
-
-}
