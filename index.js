@@ -79,15 +79,19 @@ function validateFormData(formData){
     let {firstname,lastname,email,contact}=formData
     if(firstname===""){
         nameErrmsgEl.textContent="Required"
+        nameErrmsgEl.color= "Red"
     }
     if(lastname===""){
         lasterrmsgEl.textContent="Required"
+        lasterrmsgEl.color = "Red"
     }
     if(email===""){
         emailerrmsgEl.textContent="Required"
+        emailerrmsgEl.color = "Red"
     }
     if(contact===""){
         contacterrmsgEl.textContent="Required"
+        contacterrmsgEl.color="Red"
     }
 }
 
